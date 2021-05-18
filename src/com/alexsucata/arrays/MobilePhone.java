@@ -1,7 +1,6 @@
 package com.alexsucata.arrays;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MobilePhone {
     private String myNumber;
@@ -25,6 +24,9 @@ public class MobilePhone {
         int foundPosition = findContact(oldContact);
         if (foundPosition < 0) {
             System.out.println(oldContact.getName() + " was not found.");
+            return false;
+        }else if (findContact(newContact.getName()) != -1){
+            System.out.println("Contact with name " + newContact.getName() + " already exists. Update not successful");
             return false;
         }
         this.myContacts.set(foundPosition, newContact);
