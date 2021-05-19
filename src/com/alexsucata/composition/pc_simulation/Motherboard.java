@@ -3,11 +3,11 @@ package com.alexsucata.composition.pc_simulation;
 public class Motherboard {
     private String model;
     private String manufacturer;
-    private int ramSlots;
-    private int cardSlots;
+    private Integer ramSlots;
+    private Integer cardSlots;
     private String bios;
 
-    public Motherboard(String model, String manufacturer, int ramSlots, int cardSlots, String bios) {
+    public Motherboard(String model, String manufacturer, Integer ramSlots, Integer cardSlots, String bios) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.ramSlots = ramSlots;
@@ -27,11 +27,11 @@ public class Motherboard {
         return manufacturer;
     }
 
-    public int getRamSlots() {
+    public Integer getRamSlots() {
         return ramSlots;
     }
 
-    public int getCardSlots() {
+    public Integer getCardSlots() {
         return cardSlots;
     }
 
