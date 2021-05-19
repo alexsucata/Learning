@@ -16,7 +16,7 @@ public class Motherboard {
     }
 
     public void loadProgram (String programName){
-        System.out.println("Program " + programName + " is loading");
+        System.out.println(programName + " is loading");
     }
 
     public String getModel() {
