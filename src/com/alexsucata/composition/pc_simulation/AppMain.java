@@ -10,8 +10,6 @@ public class AppMain {
         Motherboard theMotherboard = new Motherboard("B365M", "Gigabyte", 4, 4, "AMI UEFI BIOS");
 
         PC thePC = new PC(theCase, theMonitor, theMotherboard);
-        thePC.getMonitor().drawPixelAt(1500, 1200, " red");
-        thePC.getMotherboard().loadProgram("Windows 10");
-        thePC.getTheCase().pressPowerButton();
+        thePC.powerUp();
     }
 }

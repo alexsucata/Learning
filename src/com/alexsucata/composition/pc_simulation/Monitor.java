@@ -14,7 +14,7 @@ public class Monitor {
     }
 
     public void drawPixelAt(Integer x, Integer y, String color) {
-        System.out.println("Drawing pixel at " + x + "," + y + " in color" + color);
+        System.out.println("Drawing pixel at " + x + ", " + y + " in color" + color);
     }
 
     public String getModel() {
